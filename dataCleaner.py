@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("booking_iasi.csv")
+df = pd.read_csv("booking_data.csv")
 
 df["Pret"] = df["Pret"].astype(str)
 
@@ -15,4 +15,4 @@ df["Pret"] = df["Pret"].apply(formatare_pret)
 df["Nume Hotel"]=df["Nume Hotel"].astype(str)+" "
 df["Pret"] = df["Pret"].astype(str) + ' lei'
 
-df.to_csv('cleaned_booking_iasi.csv', index=False)
+df.to_csv('cleaned_booking_data.csv', index=False)

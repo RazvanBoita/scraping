@@ -1,0 +1,22 @@
+Iasi: -1161664
+Bucuresti: -1153951
+Cluj: -1156174
+Timisoara: -1172411
+Brasov: -1153613
+Craiova: -1157134
+Suceava: -1171644
+Constanta: -1156502
+Piatra Neamt: -1166593
+Budapesta: -850553
+Viena: -1995499
+Londra: -2601889
+Milano: -121726
+Berlin: -1746443 
+Dublin: -1502554
+Bruxelles: -1955538
+Dubai: -782831
+Barcelona: -372490
+Lisabona: -2167973
+Paris: -1456928
+Istanbul: -755070
+Atena: -814876 
