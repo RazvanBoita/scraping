@@ -93,7 +93,6 @@ driver.get(check_url)
 check_src = driver.page_source
 soup = BeautifulSoup(check_src,"html.parser")
 
-
 description = soup.find("h1",{'class':'f6431b446c d5f78961c3'})
 results = trimNrFromtext(description.text)
 print(f"Found {results} hotels")
@@ -104,8 +103,9 @@ hotels_count=0
 with open("booking_data.csv",'w',newline='',encoding='utf-8') as file:
     csvwriter = csv.writer(file)
     csvwriter.writerow(['Nume Hotel', 'Pret','Rating','Nr Evaluari']) 
-    # results//25+1
-    for i in range(0, 1):
+    # This for loop will iterate through all the possible results, so it may take a while
+    # If you want to just test the functionality, you can replace {results//25+1} with the number of pages you want to fetch.
+    for i in range(0, results//25+1):
         offset_val = i * 25
         curr_url = base_url.format(result, checkin, checkout, offset_val)
         driver.get(curr_url)
